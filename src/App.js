@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import Home from "./components/Home";
+import Services from "./components/Services";
+import Story from "./components/Story";
+import Partners from "./components/Partners";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import WhatsAppButton from "./components/WhatsAppButton";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Home />
+      <Services />
+      <Story />
+      <Partners />
+      <Testimonials />
+      <Contact />
+      <Footer />
+      <WhatsAppButton phone="923359112095" />
     </div>
   );
 }
