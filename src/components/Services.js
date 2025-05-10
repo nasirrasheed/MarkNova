@@ -9,6 +9,7 @@ const services = [
     icon: (
       <svg width="48" height="48" fill="none"><circle cx="24" cy="24" r="24" fill="#7f5cff"/><path d="M16 32l16-16M32 32H16V16" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
     ),
+    link: "/digital-marketing"
   },
   {
     title: "Website Development",
@@ -16,6 +17,7 @@ const services = [
     icon: (
       <svg width="48" height="48" fill="none"><circle cx="24" cy="24" r="24" fill="#00fff7"/><path d="M16 32V16h16v16H16zm0 0l16-16" stroke="#181824" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
     ),
+    link: "/website-development"
   },
   {
     title: "AI Automation Agents",
@@ -24,6 +26,7 @@ const services = [
       <svg width="48" height="48" fill="none"><circle cx="24" cy="24" r="24" fill="#ff00cc"/><path d="M24 16v16M16 24h16" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
     ),
     comingSoon: true,
+    link: "/ai-automation-agents"
   },
 ];
 
@@ -35,21 +38,22 @@ function Services() {
       </h2>
       <div className="services-cards">
         {services.map((service, idx) => (
-          <motion.div
-            className={`service-card${service.comingSoon ? " coming-soon" : ""}`}
-            key={service.title}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: idx * 0.2 }}
-          >
-            <div className="service-icon">{service.icon}</div>
-            <h3>{service.title}</h3>
-            <p>{service.desc}</p>
-            {service.comingSoon && (
-              <span className="soon-badge">Coming Soon</span>
-            )}
-          </motion.div>
+          <a href={service.link} key={service.title} className="service-link">
+            <motion.div
+              className={`service-card${service.comingSoon ? " coming-soon" : ""}`}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: idx * 0.2 }}
+            >
+              <div className="service-icon">{service.icon}</div>
+              <h3>{service.title}</h3>
+              <p>{service.desc}</p>
+              {service.comingSoon && (
+                <span className="soon-badge">Coming Soon</span>
+              )}
+            </motion.div>
+          </a>
         ))}
       </div>
     </section>
