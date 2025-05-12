@@ -1,0 +1,474 @@
+.aiagents-info-section {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .aiagents-info-cards {
+    display: flex;
+    gap: 2rem;
+    max-width: 1100px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .aiagents-info-card {
+    background: rgba(20, 24, 40, 0.65);
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 32px #00fff733, 0 2px 16px #7f5cff22;
+    padding: 2rem 1.5rem;
+    flex: 1 1 340px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-size: 1.13rem;
+    color: #b6ffe6;
+    line-height: 1.8;
+    word-break: break-word;
+    min-width: 0;
+  }
+  .aiagents-info-card h2 {
+    font-size: 1.3rem;
+    color: #00fff7;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-weight: 700;
+  }
+  .aiagents-info-card p,
+  .aiagents-info-card ol,
+  .aiagents-info-card ul {
+    color: #b6ffe6;
+    font-size: 1.13rem;
+    margin: 0;
+    line-height: 1.8;
+    font-family: inherit;
+  }
+  .aiagents-info-card ul,
+  .aiagents-info-card ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+  }
+  .aiagents-info-card li {
+    margin-bottom: 0.6rem;
+    font-size: 1.13rem;
+    font-weight: 500;
+    list-style-type: disc;
+    font-family: inherit;
+  }
+  .aiagents-info-card ol {
+    padding-left: 1.2rem;
+  }
+  @media (max-width: 900px) {
+    .aiagents-info-cards {
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+    }
+    .aiagents-info-card {
+      max-width: 98vw;
+      width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    .aiagents-info-section {
+      padding: 1.2rem 0.2rem;
+    }
+    .aiagents-info-cards {
+      gap: 0.8rem;
+    }
+    .aiagents-info-card {
+      padding: 1.1rem 0.7rem;
+      font-size: clamp(0.95rem, 3vw, 1.05rem);
+      max-width: 100vw;
+      width: 100%;
+      border-radius: 0.8rem;
+    }
+    .aiagents-info-card h2 {
+      font-size: clamp(1rem, 4vw, 1.15rem);
+    }
+    .aiagents-info-card li,
+    .aiagents-info-card p,
+    .aiagents-info-card ol,
+    .aiagents-info-card ul {
+      font-size: clamp(0.95rem, 3vw, 1.05rem);
+    }
+  }
+.aiautomation-main-container,
+.aiagents-main-container {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  color: #f4f4f8;
+  background: linear-gradient(120deg, #0a0a23 0%, #1a1a2e 100%);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero Section */
+.aiagents-hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.aiagents-hero-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #00fff7;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #00fff7 0%, #7f5cff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aiagents-hero-subtext {
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.15rem;
+  color: #b6ffe6;
+}
+.aiagents-cta-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2.2rem;
+  background: linear-gradient(90deg,#00fff7,#7f5cff 100%);
+  color: #181824;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 16px #00fff744, 0 0 32px #7f5cff33;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+.aiagents-cta-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 32px #00fff788, 0 0 48px #7f5cff55;
+  background: linear-gradient(90deg,#7f5cff,#00fff7 100%);
+}
+@media (max-width: 600px) {
+  .aiagents-cta-btn {
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    font-size: 1rem;
+    max-width: 88vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .aiagents-info-section {
+    padding: 1.2rem 0.2rem;
+  }
+  .aiagents-info-cards {
+    gap: 0.8rem;
+  }
+  .aiagents-info-card {
+    padding: 1.1rem 0.7rem;
+    font-size: clamp(0.95rem, 3vw, 1.05rem);
+    max-width: 100vw;
+    width: 100%;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+  }
+  .aiagents-info-card h2 {
+    font-size: clamp(1rem, 4vw, 1.15rem);
+  }
+  .aiagents-info-card li,
+  .aiagents-info-card p,
+  .aiagents-info-card ol,
+  .aiagents-info-card ul {
+    font-size: clamp(0.95rem, 3vw, 1.05rem);
+  }
+}
+
+/* Services Section */
+.aiagents-services-section {
+  padding: 2rem 1rem;
+}
+.aiagents-section-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #00fff7;
+  margin-bottom: 2rem;
+}
+.aiagents-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.aiagents-service-card {
+  background: rgba(20, 24, 40, 0.65);
+  border-radius: 1.2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 8px 32px #00fff733, 0 2px 16px #7f5cff22;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aiagents-service-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 48px #00fff799, 0 4px 32px #7f5cff44;
+}
+.aiagents-service-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.aiagents-service-title {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.aiagents-service-desc {
+  color: #b6ffe6;
+  font-size: 1rem;
+}
+
+/* Industries Section */
+.aiagents-industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+}
+.aiagents-industry-card {
+  background: rgba(20, 24, 40, 0.65);
+  border-radius: 1rem;
+  padding: 1.2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0 2px 12px #00fff733;
+  cursor: pointer;
+}
+.aiagents-industry-card:hover {
+  box-shadow: 0 8px 32px #7f5cff55;
+  transform: translateY(-4px) scale(1.05);
+}
+.aiagents-industry-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.aiagents-industry-title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Highlights Section */
+.aiagents-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+}
+.aiagents-highlight-card {
+  background: linear-gradient(90deg, #00fff7 0%, #7f5cff 100%);
+  color: #181824;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 2px 16px #00fff744;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.aiagents-highlight-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px #7f5cff55;
+}
+
+/* Final CTA Section */
+.aiagents-finalcta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem 2rem 1rem;
+  background: linear-gradient(90deg, #181824 60%, #1a1a2e 100%);
+  border-radius: 2rem;
+  margin: 2rem auto 2rem auto;
+  max-width: 700px;
+  box-shadow: 0 8px 32px #00fff733;
+}
+.aiagents-finalcta-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #00fff7;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.aiagents-finalcta-subtext {
+  color: #b6ffe6;
+  font-size: 1.15rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+.aiagents-finalcta-btn {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: linear-gradient(90deg,#00fff7,#7f5cff 100%);
+  color: #181824;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 16px #00fff744, 0 0 32px #7f5cff33;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.aiagents-finalcta-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 32px #00fff788, 0 0 48px #7f5cff55;
+  background: linear-gradient(90deg,#7f5cff,#00fff7 100%);
+}
+
+@media (max-width: 900px) {
+  .aiagents-hero-title { font-size: 1.7rem; }
+  .aiagents-section-heading { font-size: 1.3rem; }
+  .aiagents-services-grid,
+  .aiagents-highlights-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .aiagents-hero { padding: 2rem 0.5rem 1rem 0.5rem; }
+  .aiagents-hero-title { font-size: 1.1rem; }
+  .aiagents-services-grid,
+  .aiagents-highlights-grid,
+  .aiagents-industries-grid { grid-template-columns: 1fr; }
+  .aiagents-finalcta-section {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+    border-radius: 1rem;
+    max-width: 98vw;
+  }
+  .aiagents-finalcta-title {
+    font-size: 1.3rem;
+  }
+  .aiagents-finalcta-subtext {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .aiagents-finalcta-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+.aiagents-whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999; /* Increased z-index */
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px #0003;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.aiagents-whatsapp-float:hover {
+  box-shadow: 0 8px 32px #25d36688;
+  transform: scale(1.08);
+}
+.aiagents-whatsapp-float img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+@media (max-width: 600px) {
+  .aiagents-whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px;
+  }
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.aiagents-main-container {
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.aiagents-info-section,
+.aiagents-info-cards,
+.aiagents-info-card,
+.aiagents-services-grid,
+.aiagents-service-card,
+.aiagents-industries-grid,
+.aiagents-industry-card {
+  box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+  .aiagents-info-section,
+  .aiagents-info-cards,
+  .aiagents-info-card,
+  .aiagents-services-grid,
+  .aiagents-service-card,
+  .aiagents-industries-grid,
+  .aiagents-industry-card {
+    max-width: 100vw;
+    width: 100vw;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .aiagents-info-card {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+.aiagents-whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px #0003;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.aiagents-whatsapp-float:hover {
+  box-shadow: 0 8px 32px #25d36688;
+  transform: scale(1.08);
+}
+.aiagents-whatsapp-float img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+@media (max-width: 600px) {
+  .aiagents-whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px;
+  }
+}

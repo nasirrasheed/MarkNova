@@ -1,0 +1,200 @@
+.dmk-main-container {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  color: #f4f4f8;
+  background: linear-gradient(120deg, #0a0a23 0%, #1a1a2e 100%);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero */
+.dmk-hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.dmk-hero-title {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #00fff7;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #00fff7 0%, #ff00cc 60%, #7f5cff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dmk-hero-subtext {
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.15rem;
+  color: #b6ffe6;
+}
+.dmk-cta-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2.2rem;
+  background: linear-gradient(90deg,#00fff7,#ff00cc 80%, #7f5cff 100%);
+  color: #181824;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 16px #00fff744, 0 0 32px #7f5cff33;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.dmk-cta-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 32px #00fff788, 0 0 48px #7f5cff55;
+  background: linear-gradient(90deg,#7f5cff,#00fff7 80%, #ff00cc 100%);
+}
+
+/* Services */
+.dmk-services-section {
+  padding: 2rem 1rem;
+}
+.dmk-section-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #00fff7;
+  margin-bottom: 2rem;
+}
+.dmk-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.dmk-service-card {
+  background: rgba(20, 24, 40, 0.65);
+  border-radius: 1.5rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 8px 32px #00fff733, 0 2px 16px #7f5cff22;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dmk-service-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 48px #00fff799, 0 4px 32px #7f5cff44;
+}
+.dmk-service-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.dmk-service-title {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Seen In Slider */
+.dmk-seenin-section {
+  padding: 2rem 1rem;
+  background: rgba(10, 10, 30, 0.7);
+}
+.dmk-slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.dmk-slider-track {
+  display: flex;
+  width: calc(180px * 10);
+  animation: dmk-slider-scroll 18s linear infinite;
+}
+.dmk-slider-logo {
+  width: 180px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.5rem;
+  opacity: 0.8;
+}
+.dmk-slider-logo img {
+  max-width: 120px;
+  max-height: 60px;
+  filter: grayscale(1) brightness(1.2);
+}
+@keyframes dmk-slider-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Industries We Help */
+.dmk-industries-section {
+  padding: 2rem 1rem 3rem 1rem;
+}
+.dmk-industries-flex {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.dmk-industries-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.dmk-industry-item {
+  background: #1b1b1b;
+  border-radius: 1rem;
+  padding: 1.2rem 2.5rem;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 12px #00fff766;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.dmk-industry-item:hover {
+  box-shadow: 0 0 24px #00fff7aa;
+  transform: scale(1.04);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .dmk-hero-title { font-size: 2rem; }
+  .dmk-section-heading { font-size: 1.3rem; }
+  .dmk-services-grid { grid-template-columns: 1fr 1fr; }
+  .dmk-slider-logo { width: 120px; }
+  .dmk-industries-flex { gap: 1rem; }
+  .dmk-industry-item { padding: 1rem 1.2rem; }
+}
+@media (max-width: 600px) {
+  .dmk-hero { padding: 2rem 0.5rem 1rem 0.5rem; }
+  .dmk-hero-title { font-size: 1.2rem; }
+  .dmk-services-grid { grid-template-columns: 1fr; }
+  .dmk-slider-logo { width: 80px; }
+  .dmk-industries-flex { flex-direction: column; align-items: center; }
+  .dmk-industry-item { padding: 0.8rem 0.5rem; font-size: 1rem; }
+}
+.dmk-whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px #0003;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.dmk-whatsapp-float:hover {
+  box-shadow: 0 8px 32px #25d36688;
+  transform: scale(1.08);
+}
+@media (max-width: 600px) {
+  .dmk-whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    padding: 7px;
+  }
+}

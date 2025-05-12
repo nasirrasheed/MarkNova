@@ -1,0 +1,197 @@
+
+.navbar {
+  width: 100%;
+  /* height: 100vh; */ /* Remove or comment out this line */
+  background: linear-gradient(90deg, #291735 0%, #14142A 100%);
+  box-shadow: 0 2px 16px #29173544;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.7rem 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo img {
+  height: 78px;
+  width: 78px;
+  border-radius: 50%;
+  box-shadow: 0 0 16px #29173599, 0 0 32px #14142A55;
+  background: #fff;
+  padding: 2px;
+  transition: box-shadow 0.2s;
+}
+
+.navbar-logo img:hover {
+  box-shadow: 0 0 32px #7f5cff99, 0 0 16px #00fff799;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  z-index: 110;
+  height: 40px;
+}
+.navbar-toggle-bar {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  transition: none;
+}
+
+.navbar-links li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #fff;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-size: 1.08rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 1.2rem;
+  background: rgba(41,23,53,0.85);
+  box-shadow: 0 2px 12px #29173533;
+  letter-spacing: 1px;
+  border: 1.5px solid transparent;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: linear-gradient(90deg, #00fff7 0%, #ff00cc 60%, #7f5cff 100%);
+  color: #181824;
+  box-shadow: 0 0 16px #00fff799, 0 0 32px #7f5cff99;
+  outline: none;
+}
+
+.nav-glow {
+  background: linear-gradient(90deg, #7f5cff 0%, #00fff7 100%);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 0 16px #7f5cff99, 0 0 32px #00fff799;
+  border: none;
+  animation: glowPulse 1.5s infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 8px #7f5cff99, 0 0 16px #00fff799; }
+  100% { box-shadow: 0 0 24px #7f5cffcc, 0 0 48px #00fff7cc; }
+}
+
+/* Tablet adjustments */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0.7rem 1rem;
+  }
+  .navbar-links {
+    gap: 1.2rem;
+  }
+  .navbar-logo img {
+    height: 78px;
+    width: 78px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0.5rem 0.7rem;
+    justify-content: space-between;
+    max-width: 98%;
+  }
+  .navbar-logo img {
+    height: 60px;
+    width: 60px;
+  }
+  .navbar-toggle {
+    display: flex;
+  }
+  .navbar-links {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #291735 60%, #14142A 100%);
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 2rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    z-index: 9999;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+  }
+  .navbar-links.open {
+    transform: translateY(0);
+  }
+  .navbar-links li {
+    width: 80vw;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .nav-link, .nav-glow {
+    display: block;
+    width: 100%;
+    padding: 1.3rem 0;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    box-shadow: 0 2px 12px #14142A33;
+    border: 2px solid #14142A;
+    text-align: center;
+    animation: mobileGlow 1.2s infinite alternate;
+  }
+  @keyframes mobileGlow {
+    0% { box-shadow: 0 0 8px #29173599; }
+    100% { box-shadow: 0 0 24px #7f5cffcc; }
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .navbar {
+    padding: 0.3rem 0.2rem;
+   
+  }
+  .navbar-logo img {
+    height: 43px;
+    width: 43px;
+  }
+  .navbar-links {
+    padding: 4rem 0.5rem 1rem 0.5rem;
+    max-width: 98vw;
+  }
+  .nav-link, .nav-glow {
+    font-size: 0.98rem;
+    padding: 0.8rem 0.4rem;
+  }
+}

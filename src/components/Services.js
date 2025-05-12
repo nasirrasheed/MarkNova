@@ -9,7 +9,7 @@ const services = [
     icon: (
       <svg width="48" height="48" fill="none"><circle cx="24" cy="24" r="24" fill="#7f5cff"/><path d="M16 32l16-16M32 32H16V16" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
     ),
-    link: "/digital-marketing"
+    link: "/digital-marketing-new" // <-- updated link
   },
   {
     title: "Website Development",

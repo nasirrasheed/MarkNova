@@ -3,7 +3,7 @@ import "./Story.css";
 
 function Story() {
   return (
-    <section className="story-section">
+    <section className="story-section" id="story">
       <div className="story-content">
         <div className="story-image-wrapper">
           <img
