@@ -20,7 +20,7 @@ function Contact() {
         <div className="contact-info">
           <div className="info-item">
             <span className="info-icon">📍</span>
-            <span>123 Business Ave, City</span>
+            <span>Satellite Town Street No 7, SadiqAbad</span>
           </div>
           <div className="info-item">
             <span className="info-icon">📧</span>
@@ -28,7 +28,7 @@ function Contact() {
           </div>
           <div className="info-item">
             <span className="info-icon">📞</span>
-            <span>+1 (555) 123-4567</span>
+            <span>+92 335 911 2095</span>
           </div>
         </div>
       </div>

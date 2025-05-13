@@ -7,13 +7,13 @@ const techIcons = [
   { name: "HTML5", icon: "/icons/html.svg" },
   { name: "CSS3", icon: "/icons/Tailwind-css.svg" },
   { name: "JavaScript", icon: "/icons/Javascript.svg" },
-  { name: "React.js", icon: "/icons/react.svg" },
+  { name: "React.js", icon: "/icons/React.svg" },
   { name: "Node.js", icon: "/icons/Node-js.svg" },
-  { name: "Shopify", icon: "/icons/shopify.svg" },
-  { name: "WordPress", icon: "/icons/wordpress.svg" },
-  { name: "Bootstrap", icon: "/icons/bootstrap.svg" },
-  { name: "Firebase", icon: "/icons/firebase.svg" },
-  { name: "MongoDB", icon: "/icons/mongodb.svg" }
+  { name: "Shopify", icon: "/icons/Shopify.svg" },
+  { name: "WordPress", icon: "/icons/Wordpress.svg" },
+  { name: "Bootstrap", icon: "/icons/Bootstrap.svg" },
+  { name: "Firebase", icon: "/icons/Firebase.svg" },
+  { name: "MongoDB", icon: "/icons/Mongodb.svg" }
 ];
 
 // Portfolio thumbnails (replace with your images/links)
