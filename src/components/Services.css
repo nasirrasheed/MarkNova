@@ -121,3 +121,53 @@
   0% { filter: brightness(1);}
   100% { filter: brightness(1.3);}
 }
+
+.view-more-btn,
+.glowing-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.7em 2em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #7f5cff 0%, #00fff7 100%);
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+  box-shadow: 0 4px 24px #7f5cff55, 0 0px 0px #00fff7;
+}
+
+.view-more-btn .btn-glow {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 2em;
+  background: radial-gradient(circle, #00fff7 0%, #7f5cff 100%);
+  opacity: 0.3;
+  filter: blur(8px);
+  z-index: -1;
+  transition: opacity 0.3s;
+}
+
+.view-more-btn .btn-text {
+  position: relative;
+  z-index: 2;
+}
+
+.view-more-btn:hover,
+.glowing-btn:hover {
+  background: linear-gradient(90deg, #00fff7 0%, #7f5cff 100%);
+  color: #fff;
+  box-shadow: 0 0 24px #00fff7cc, 0 0 48px #7f5cff99;
+  transform: translateY(-2px) scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .view-more-btn,
+  .glowing-btn {
+    font-size: 0.95rem;
+    padding: 0.6em 1.2em;
+  }
+}

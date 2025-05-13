@@ -40,7 +40,7 @@ function Services() {
         {services.map((service, idx) => (
           <a href={service.link} key={service.title} className="service-link">
             <motion.div
-              className={`service-card${service.comingSoon ? " coming-soon" : ""}`}
+              className="service-card"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -49,9 +49,15 @@ function Services() {
               <div className="service-icon">{service.icon}</div>
               <h3>{service.title}</h3>
               <p>{service.desc}</p>
-              {service.comingSoon && (
-                <span className="soon-badge">Coming Soon</span>
-              )}
+              <motion.button
+                className="view-more-btn glowing-btn"
+                whileHover={{ scale: 1.08, boxShadow: "0 0 16px #7f5cff, 0 0 32px #00fff7" }}
+                whileTap={{ scale: 0.96 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <span className="btn-glow"></span>
+                <span className="btn-text">View More</span>
+              </motion.button>
             </motion.div>
           </a>
         ))}
