@@ -4,17 +4,13 @@ import "./WebsiteDevelopment.css";
 
 // Technologies icons (replace with your SVGs or images as needed)
 const techIcons = [
-  { name: "HTML5", icon: "/icons/html5.svg" },
-  { name: "CSS3", icon: "/icons/css3.svg" },
-  { name: "JavaScript", icon: "/icons/js.svg" },
+  { name: "HTML5", icon: "/icons/html.svg" },
+  { name: "CSS3", icon: "/icons/Tailwind-css.svg" },
+  { name: "JavaScript", icon: "/icons/Javascript.svg" },
   { name: "React.js", icon: "/icons/react.svg" },
-  { name: "Next.js", icon: "/icons/nextjs.svg" },
-  { name: "Vue.js", icon: "/icons/vue.svg" },
-  { name: "Nuxt.js", icon: "/icons/nuxt.svg" },
-  { name: "Node.js", icon: "/icons/nodejs.svg" },
+  { name: "Node.js", icon: "/icons/Node-js.svg" },
   { name: "Shopify", icon: "/icons/shopify.svg" },
   { name: "WordPress", icon: "/icons/wordpress.svg" },
-  { name: "Tailwind", icon: "/icons/tailwind.svg" },
   { name: "Bootstrap", icon: "/icons/bootstrap.svg" },
   { name: "Firebase", icon: "/icons/firebase.svg" },
   { name: "MongoDB", icon: "/icons/mongodb.svg" }
@@ -22,10 +18,12 @@ const techIcons = [
 
 // Portfolio thumbnails (replace with your images/links)
 const portfolio = [
-  { img: "/portfolio/site1.jpg", link: "https://site1.com", title: "Fashion Store" },
-  { img: "/portfolio/site2.jpg", link: "https://site2.com", title: "Real Estate" },
-  { img: "/portfolio/site3.jpg", link: "https://site3.com", title: "Coach Landing" },
-  { img: "/portfolio/site4.jpg", link: "https://site4.com", title: "Restaurant" }
+  { img: "/portfolio/zuvasheabutter.png", link: "https://site1.com", title: "Fashion Store" },
+  { img: "/portfolio/RealEstate.png", link: "https://site2.com", title: "Real Estate" },
+  { img: "/portfolio/Coaching.png", link: "https://site3.com", title: "Coach Landing" },
+  { img: "/portfolio/orliani.png", link: "/", title: "Restaurant" },
+  { img: "/portfolio/Dentist.png", link: "/", title: "Dentist" },
+  { img: "/portfolio/HealthCare.png", link: "https://www.dynamicmart.co.uk/?srsltid=AfmBOopczYWpxB35SJdI4d9zjSAzaramm8PsRTLFEwP5Rx0--KvzyyfI", title: "HealthCare" }
 ];
 
 const whatWeDevelop = [
