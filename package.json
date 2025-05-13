@@ -2,7 +2,6 @@
   "name": "marknova",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nasirrasheed.github.io/MarkNova",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
