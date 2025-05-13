@@ -11,7 +11,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">
         <a href="/">
-          <img src={process.env.PUBLIC_URL + "/websitelogo.png"} alt="Website Logo" />
+          <img src={process.env.PUBLIC_URL + "/Websitelogo.png"} alt="Website Logo" />
         </a>
       </div>
       <button

@@ -7,7 +7,7 @@ function Hero() {
   <div className="hero-sec">
     <section className="hero-content glass">
       <motion.img
-        src={process.env.PUBLIC_URL + "/websitelogo.png"}
+        src={process.env.PUBLIC_URL + "/Websitelogo.png"}
         alt="AI Digital Agent"
         className="hero-img"
         initial={{ opacity: 0, scale: 0.9 }}
