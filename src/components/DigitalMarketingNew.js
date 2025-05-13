@@ -61,9 +61,9 @@ const DigitalMarketingNew = () => (
       <h2 className="dmk-section-heading">As Seen In</h2>
       <div className="dmk-slider-wrapper">
         <div className="dmk-slider-track">
-          {logos.concat(logos).map((logo, i) => (
+          {partnerIcons.concat(partnerIcons).map((icon, i) => (
             <div className="dmk-slider-logo" key={i}>
-              <img src={logo} alt="Company Logo" />
+              <img src={icon} alt="Partner Logo" />
             </div>
           ))}
         </div>
@@ -104,3 +104,14 @@ const DigitalMarketingNew = () => (
 );
 
 export default DigitalMarketingNew;
+const partnerIcons = [
+  "/icons/Beauty.png",
+  "/icons/Circular.png",
+  "/icons/Urban.png",
+  "/icons/Nine.png",
+  "/icons/Saree.png",
+  "/icons/Clothing.png",
+  "/icons/Ego.png",
+  "/icons/Lion.png",
+  "/icons/Interior.png"
+];
