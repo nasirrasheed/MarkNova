@@ -6,6 +6,7 @@ function Hero() {
   return (
   <div className="hero-sec">
     <section className="hero-content glass">
+      
       <motion.img
         src={process.env.PUBLIC_URL + "/Websitelogo.png"}
         alt="AI Digital Agent"
