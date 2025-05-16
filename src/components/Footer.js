@@ -42,6 +42,11 @@ function Footer() {
               variants={linkVariants}
               whileHover="hover"
             >Testimonials</motion.a>
+            <motion.a 
+              href="/portfolio"
+              variants={linkVariants}
+              whileHover="hover"
+            >Portfolio</motion.a>
            
           </div>
           
