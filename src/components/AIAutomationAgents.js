@@ -179,7 +179,7 @@ function AIAutomationAgents() {
         </motion.a>
       </section>
       {/* Floating WhatsApp Button */}
-      <a
+      {/* <a
         href="https://wa.me/923359112095"
         className="aiagents-whatsapp-float"
         target="_blank"
@@ -187,7 +187,7 @@ function AIAutomationAgents() {
         aria-label="Chat on WhatsApp"
       >
         <img src="/icons/whatsapp.svg" alt="WhatsApp" />
-      </a>
+      </a> */}
     </main>
   );
 }
