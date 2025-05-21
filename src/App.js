@@ -13,6 +13,7 @@ import LegalNotice from "./components/LegalNotice";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Portfolio from "./components/Portfolio";
 import WhatsAppButton from "./components/WhatsAppButton"; // <-- Add this import
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
-        <WhatsAppButton phone="923359112095" /> {/* <-- Add this line */}
+        <WhatsAppButton phone="923359112095" />
+        <ScrollToTopButton /> {/* <-- Add this line */}
         <Footer />
       </div>
     </Router>
