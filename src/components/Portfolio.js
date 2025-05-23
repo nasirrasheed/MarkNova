@@ -10,7 +10,21 @@ const portfolioImages = [
   { img: "/portfolio/Coaching.png", title: "Coach Landing" },
  
   { img: "/portfolio/Dentist.png", title: "Dentist" },
-  { img: "/portfolio/HealthCare.png", title: "HealthCare" }
+  { img: "/portfolio/HealthCare.png", title: "HealthCare" },
+  {img: "/portfolio/resturants-a.png", title: "Restaurant" },
+  {img: "/portfolio/resturants-b.png", title: "Restaurant" },
+  {img: "/portfolio/resturant-c.png", title: "Restaurant" },
+  {img: "/portfolio/resturant-d.png", title: "Restaurant" },
+  {img: "/portfolio/dentist-a.png", title: "Dentist" },
+  {img: "/portfolio/dentist-b.png", title: "Dentist" },
+  {img: "/portfolio/dentist-c.png", title: "Dentist" },
+  {img: "/portfolio/dentist-d.png", title: "Dentist" },
+  {img: "/portfolio/fitness-a.png", title: "Fitness" },
+  {img: "/portfolio/fitness-b.png", title: "Fitness" },
+  {img: "/portfolio/fitness-c.png", title: "Fitness" },
+  {img: "/portfolio/fitness-d.png", title: "Fitness" },
+  {img: "/portfolio/fitness-e.png", title: "Fitness" },
+
   // Add more images as needed
 ];
 
