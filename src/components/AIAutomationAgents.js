@@ -274,7 +274,8 @@ function AIAutomationAgents() {
           gap: "2rem",
           justifyContent: "center"
         }}>
-          export { AgentBuilder };
+<AgentBuilder/>
+
         </div>
         <style>
           {`
@@ -812,6 +813,3 @@ const aiMsgStyle = {
   maxWidth: "80%",
   textAlign: "left"
 };
-
-// At the very end of the file (after all other code)
-export { AgentBuilder };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Portfolio.css";
-import { AgentBuilder } from "./AIAutomationAgents";
+
 
 const portfolioImages = [
   { img: "/portfolio/zuvasheabutter.png", title: "Fashion Store" },
@@ -23,12 +23,7 @@ function Portfolio() {
   return (
     
     <main className="portfolio-main">
-       <section style={{ background: "#23234a", padding: "2rem 0" }}>
-          <h2 style={{ color: "#00fff7", textAlign: "center", marginBottom: 32 }}>
-            Design Your Agent in 3 Steps
-          </h2>
-          <AgentBuilder />
-        </section>
+     
       <h1 className="portfolio-title">Our Portfolio</h1>
       <div className="portfolio-grid">
         {portfolioImages.map((site, idx) => (
@@ -62,10 +57,7 @@ function Portfolio() {
         </div>
       )}
       <>
-        {/* This will be the first section */}
-       
-
-        {/* Rest of your portfolio content */}
+ 
       </>
     </main>
   );
